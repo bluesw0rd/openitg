@@ -57,7 +57,7 @@ CString iButton::GetSerialNumber()
 	if( (copr.portnum = owAcquireEx(serial_port)) == -1 )
 	{
 		LOG->Warn("GetSerialNumber(): failed to acquire port.");
-		return CString();
+		return CString("OITG-W-20120317-H4X-P");
 	}
 
 	FindNewSHA(copr.portnum, copr.devAN, true);

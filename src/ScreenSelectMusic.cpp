@@ -979,6 +979,10 @@ void ScreenSelectMusic::Input( const DeviceInput& DeviceI, InputEventType type, 
 					{
 						Song *pCurSong = m_MusicWheel.GetSelectedSong();
 					}*/
+				} else if (bBothDown) {
+					// modification according to issue 1, bluesw0rd/openitg
+					// - bertramtruong
+					m_MusicWheel.CollapseOpenSection();
 				}
 			}
 			else if( bLeftIsDown )

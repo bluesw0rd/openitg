@@ -79,6 +79,7 @@ SortOrder ForceAppropriateSort( PlayMode pm, SortOrder so )
 
 void MusicWheel::Load( CString sType ) 
 {
+	m_iOpenGroupIndex = -1;
 	LOG->Trace( "MusicWheel::Load('%s')", sType.c_str() );
 
 	LoadFromMetrics( sType );
@@ -1158,6 +1159,14 @@ bool MusicWheel::Select()	// return true if this selection ends the screen
 	default:
 		ASSERT(0);
 		return false;
+	}
+}
+
+void MusicWheel::CollapseOpenSection()
+{
+	if (m_WheelState != STATE_LOCKED && m_sExpandedSectionName != "") {
+		m_sExpandedSectionName = ""; // will collapse
+		SetOpenGroup(m_sExpandedSectionName);
 	}
 }
 

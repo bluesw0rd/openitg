@@ -8,6 +8,7 @@
 *.idb
 *.pdb
 *.vdi
+*.ncb
 info.txt
 log.txt
 BuildLog.*
@@ -20,6 +21,7 @@ config.log
 config.status
 configure
 openitg
+Program/*
 src/.deps/
 src/Makefile
 src/archutils/Unix/verinc

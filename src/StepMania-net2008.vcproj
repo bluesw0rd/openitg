@@ -50,7 +50,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories=".;vorbis;libjpeg;&quot;lua-5.0\include&quot;;libusb\include;BaseClasses;libtomcrypt\src\headers"
+				AdditionalIncludeDirectories="&quot;C:\Program Files (x86)\Microsoft DirectX 9.0 SDK (Summer 2004)\Include&quot;;.;vorbis;libjpeg;&quot;lua-5.0\include&quot;;libusb\include;BaseClasses;libtomcrypt\src\headers"
 				PreprocessorDefinitions="WIN32,_DEBUG,_WINDOWS,WINDOWS,DEBUG,_CRT_SECURE_NO_WARNINGS"
 				StringPooling="false"
 				ExceptionHandling="0"
@@ -88,7 +88,7 @@
 				OutputFile="../Program/OpenITG-debug.exe"
 				LinkIncremental="2"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="&quot;libusb\lib\msvc&quot;"
+				AdditionalLibraryDirectories="libusb\lib\msvc;&quot;C:\Program Files (x86)\Microsoft DirectX 9.0 SDK (Summer 2004)\Lib&quot;"
 				IgnoreDefaultLibraryNames="wininet.lib;msimg32.lib;libci.lib;libcmtd.lib;libcmt.lib"
 				GenerateDebugInformation="true"
 				AssemblyDebug="0"
